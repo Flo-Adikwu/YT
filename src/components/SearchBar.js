@@ -13,11 +13,12 @@ class SearchBar extends React.Component {
         event.preventDefault();
         //TODO: make sure we call call back from parent(App) component
         this.props.onFormSubmit(this.state.term);
+
     }
 
     render() {
         return(
-            <div className="searchbar-ui segment">
+            <div className="searchbar-ui segment" style={{marginTop: "30px"}}>
                 <form onSubmit={this.onFormSubmit} className="ui form">
                     <div className="field">
                         <label>Video Search</label>
